@@ -1,0 +1,57 @@
+
+.bgc-header{
+                          height: 82px; background-color: #FFFFFF ;width: 1920px;}
+.body-header{
+    width: 1400px;margin-left: 350px
+}
+.body-header div:nth-child(1){
+    float: left
+}
+.body-header div:nth-child(1) img{
+    width: 187px;padding-top: 20px
+}
+.body-header-li{
+    padding-left:50px;float: left;
+    width: 750px;height: 60px;margin-top: 22px
+}
+li a:hover{
+    background:none;
+}
+.div-Releasetask {
+    margin-top: 15px;
+    height: 50px
+}
+
+.btn-Releasetask {
+    border-radius: 0;
+    float: left;
+    background-color: #FF5251;
+    border: none;
+    margin-left: 41px;
+    width: 330px;
+    color: white;
+}
+
+.modal-Releasedemand {
+    border-radius: 0;
+    margin-top: 300px;
+    width: 650px;
+    height: 420px;
+}
+.needinput {
+    height: 140px
+}
+
+.needinput p {
+    float: left;
+    margin-left: 60px;
+}
+
+.needinput textarea {
+    width: 460px;
+    height: 140px;
+    float: left;
+    margin-left: 5px;
+    resize: none;
+}
+

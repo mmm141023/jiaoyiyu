@@ -1,0 +1,423 @@
+.bg-img{
+    background-image:url("../img/bgcolor.png");
+    background-size:80%;width: 1920px;height: 600px
+}
+.bg-bgc {
+    background-color: #F9F9F9;
+    width: 1920px;
+    height: 3450px
+}
+a:hover{
+    text-decoration:none;
+}
+button{
+    outline: none;
+}
+ .input-phonenum {
+    width: 150px;
+    height: 27px;
+    border: none;
+    float: left;
+    padding-left: 10px;
+     outline:none;
+}
+
+.input-yzm {
+    width: 120px;
+    height: 27px;
+    border: none;
+    float: left;
+    margin-left: 15px;
+    padding-left: 10px;
+    outline:none;
+}
+
+.btn-yzm {
+    position: absolute;
+    color: red;
+    outline: none;
+    border: none;
+    background: white;
+    height: 27px;
+    width: 40px;
+    float: left
+}
+
+.btn-login {
+    background-color: #FF5251;
+    width: 57px;
+    height: 27px;
+    border: solid 1px #ffffff;;
+    margin-left: 55px;
+    color: white;
+}
+
+.div-gzh-phnum {
+    background-image: url("../img/redbanner110.png");
+    height: 110px;
+
+}
+
+.div-ssk {
+    height: 60px;
+    width: 777px;
+    margin-top: 30px;
+    font-size: 22px;
+    margin-left: 180px;
+    box-shadow:rgba(227,227,227,0.8) 0px 10px 20px 0px ;
+
+}
+
+.btn-shejishi {
+    border-radius: 0px;
+    border: none;
+    height: 59px;
+    width: 150px;
+    font-size: 22px;
+
+
+
+}
+
+.inp-ssk {
+    float: left;
+    border: none;
+    height: 59px;
+    width: 490px;
+    border-left: none;
+    padding-left: 10px;
+    font-size: 22px;
+    outline:none;
+
+}
+
+.btn-sousuo {
+    border-radius: 0;
+    border: none;
+    color: white;
+    height: 60px;
+    width: 137px;
+    background-color: #FF5251;
+    outline: none;
+
+}
+
+.div-Hotdesign {
+    font-size: 20px;
+    margin-right: 480px;
+    margin-top: 20px;
+}
+
+.div-Hotdesign a {
+    padding-left: 20px;
+    color: #FF5251
+}
+
+.div-Designservices {
+    margin-top: 10px;
+    width: 1200px;
+    height: 450px
+}
+
+.layui-hd {
+    width: 160px;
+    height: 226px;
+    background-color: white;
+    margin-right: 30px
+}
+
+.div-designclass {
+    padding-top: 10px
+}
+
+.div-designclass div {
+    height: 40px;
+    width: 135px;
+    border-bottom: solid 1px #FF5251;
+    margin-left: 13px;
+}
+
+.div-designclass div b {
+    font-size: 16px;
+    color: #FF5251;
+    line-height: 40px;
+}
+
+.div-designclass a {
+    float: left;
+    margin-top: 18px;;
+    color: #999999;
+    width: 75px;
+    text-align: center;
+}
+
+.layui-hd2 {
+    width: 160px;
+    height: 150px;
+    background-color: white;
+    margin-right: 30px
+}
+
+.layui-rhd {
+    width: 412px;
+    height: 403px;
+    background-color: white;
+}
+
+.dsbiaoqian {
+    height: 50px;
+    width: 1200px;
+    margin-top: 20px
+}
+
+.dsbiaoqian img {
+    width: 178px;
+    height: 42px
+}
+
+.dsbiaoqian div {
+    float: left;
+}
+
+.LittleRedPlate {
+    margin-top: 8px;
+    margin-left: 530px;
+    font-size: 19px
+}
+
+.LittleRedPlate font {
+    margin-left: 90px;
+    color: #000000;
+}
+
+.LittleRedPlate span {
+
+    color: #9B9B9B;
+}
+
+.div-Releasetask {
+    margin-top: 15px;
+    height: 50px
+}
+
+.btn-Releasetask {
+    border-radius: 0;
+    float: left;
+    background-color: #FF5251;
+    border: none;
+    margin-left: 41px;
+    width: 330px;
+    color: white;
+}
+
+.modal-Releasedemand {
+    border-radius: 0;
+    margin-top: 300px;
+    width: 650px;
+    height: 420px;
+}
+
+.needinput {
+    height: 140px
+}
+
+.needinput p {
+    float: left;
+    margin-left: 60px;
+}
+
+.needinput textarea {
+    width: 460px;
+    height: 140px;
+    float: left;
+    margin-left: 5px;
+    resize: none;
+}
+
+.modal-phonenum {
+    margin-left: 45px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.modal-phonenum p {
+    float: left
+}
+
+.modal-phonenum input {
+    width: 400px;
+    height: 30px;
+    border: solid 1px #999999;
+    border-right: none;
+    float: left;
+    padding-left: 10px;
+    margin-left: 6px;
+    outline:none;
+}
+
+.modal-phonenum button {
+    position: absolute;
+    color: white;
+    outline: none;
+    border: none;
+    background: #ff5251;
+    height: 30px;
+    width: 60px;
+    float: left;
+}
+
+.messageprotect p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ff5251;
+    margin-left: 226px;
+}
+
+.messageprotect button {
+    position: absolute;
+    color: white;
+    outline: none;
+    border: none;
+    background: #ff5251;
+    height: 37px;
+    width: 212px;
+    float: left;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 207px;
+}
+
+.messagef {
+    margin-top: 15px
+}
+
+.messagef a {
+    margin-left: 30px
+}
+
+.information {
+    margin-left: 42px;
+    margin-top: 20px;
+    color: #999999
+}
+
+.information p a {
+    margin-left: 30px
+}
+
+.taskingLable {
+    width: 1200px;
+    height: 50px;
+}
+
+.ManuscriptPayable {
+    width: 1200px;
+    height: 1900px;
+    margin-top: 10px
+}
+
+.ManuscriptPayableLeft {
+    float: left;
+    width: 960px;
+}
+
+.layui-hdmp {
+    width: 958px;
+    height: 344px;
+    background-color: white;
+}
+
+.bigpic {
+    float: left;
+    width: 595px;
+    height: 343px
+}
+
+.hdmp-describe {
+    float: left
+}
+
+.hdmp-describe p:nth-child(1) {
+    font-size: 26px;
+    padding-top: 44px;
+    margin-left: 23px
+}
+
+.hdmp-describe p:nth-child(2) {
+    font-size: 14px;
+    color: #7D7D7D;
+    width: 314px;
+    height: 96px;
+    margin-top: 40px;
+    margin-left: 24px;
+}
+
+.btn-yinggao {
+    float: left;
+    margin-top: 42px;
+    margin-left: 23px;
+    color: white;
+    width: 159px;
+    height: 32px;
+    background-color: #FF5251;
+    border: none
+}
+
+.moneystate {
+    width: 120px;
+    float: left;
+    margin-left: 28px;
+    margin-top: 23px;
+}
+
+.moneystate b {
+    font-size: 25px;
+    color: #FF5251;
+}
+
+.moneystate font {
+    margin-left: 10px;;
+    font-size: 12px
+}
+
+.recommendRight {
+    float: left;
+    margin-left: 30px
+}
+
+.layui-recommendRight {
+    width: 200px;
+    height: 317px;
+    background-color: white;
+}
+
+.layui-recommendRight p {
+    width: 170px;
+    margin-top: 16px;
+    font-size: 11px;
+    color: #7F7F7F
+}
+
+.layui-recommendRight button {
+    color: white;
+    width: 160px;
+    height: 33px;
+    background-color: #FF5251;
+    border: none;
+}
+
+
+
+.moretask button {
+    background-color: #FF5251;
+    width: 240px;
+    height: 46px;
+    color: white;
+    font-size: 22px;
+
+
+}
+
+
+
+

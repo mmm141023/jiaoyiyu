@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>比目鱼</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet" >
+    <link href="/css/video-js.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="/js/index.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div >
+    <div class="headerpage" th:replace="header :: header">
+ </div>
+    <div class="bg-bgc">
+
+
+
+        <!--2.一张图片-->
+
+        <div >
+            <img src="/img/278.png" >
+        </div>
+        <!--3.公众号手机号登陆注册-->
+
+        <div class="div-gzh-phnum">
+
+            <br>
+            <div  style="margin-left: 1100px;"  >
+                <div class="row" style="float: left">
+                    <div style="padding-top: 30px" class="codediv" >
+                        <input type="text"class="input-phonenum" placeholder="输入手机号"  >
+                        <div style="float: left">
+                            <input  type="text" class="input-yzm"  placeholder="验证码" >
+                            <button class="btn-yzm">获取</button></div>
+                            <button type="button"  class="btn-login loginbtn" onclick="loginButtonClick()" >
+                                登陆
+                            </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div >
+
+        <div  class="bg-img">
+
+            <div  id="close" style="position: fixed">
+                <a href="#"> <img src="/img/fenxiang.png" style="position: absolute;left: 30px; " data-toggle="modal" data-target=".abc"></a>
+
+
+                <img src="/img/guanbi-2.png" style="position: absolute;left: 284px; "  class="close" onclick="javascript:turnoff('close')">
+
+
+            </div>
+            <div class="modal fade abc" tabindex="-1" role="dialog" >
+                <div class="modal-dialog" role="document">
+                    <div  >
+                        <img src="/img/yaoqing.png">
+                        <img src="/img/close.png" style="position: absolute;left: 320px;top:720px" class="close" data-dismiss="modal" aria-label="Close" >
+                        <div align="center" style="position: absolute;left: 239px;top: 550px;">
+                            <p>https://jiaoyiyu.com</p>
+                            <img src="/img/fuzhibtn.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--4.搜索导航-->
+            <div style="margin-left: 360px;">
+            <div  class="div-ssk">
+                <div style="">
+
+                    <div class="btn-group" role="group" style="float: left;">
+                        <button type="button" class="btn btn-default btn-shejishi dropdown-toggle "
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            设计师
+                            &nbsp;&nbsp;&nbsp;<span class="caret"style="color: #ff5251"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown link</a></li>
+                            <li><a href="#">Dropdown link</a></li>
+                        </ul>
+                    </div>
+                    <input style="  " class="inp-ssk"  placeholder="设计类型">
+                    <button type="submit" class="btn-sousuo" >搜索</button>
+                </div>
+
+            </div>
+            <!--5.热门设计-->
+            <div style=" height: 40px;">
+                <div align="center" class="div-Hotdesign">
+                    <a href="../openVIP/open_vip.html">会员订购</a>
+                    <a>平面广告</a>
+                    <a>游戏</a>
+                    <a>影视动漫</a>
+                    <a>策划文案</a>
+                    <a>IT网页</a>
+                    <a>其他</a>
+                    <a>咨询</a>
+
+                </div>
+            </div>
+            <!--6.设计服务类-->
+            <div class="dsbiaoqian" >
+                <div>
+                    <img src="/img/shejfwfl.png" >
+
+                </div>
+                <div class="LittleRedPlate">
+                    <font >小红板：</font>
+                    <span >比目鱼于今天上线，接受各界点评</span>
+                </div>
+
+            </div>
+            <!--7.设计服务类分块-->
+
+            <div class="div-Designservices" >
+                <!--左div-->
+
+
+                <div style="float: left;width: 780px">
+                    <!--游戏设计-->
+                    <div class="layui-card" style="float: left;">
+                        <div class="layui-card-header layui-hd"  >
+                            <div  class="div-designclass"  >
+                                <div >
+                                    <b>游戏设计</b>
+                                </div>
+
+                                <a>原画</a>
+                                <a>角色设计</a>
+                                <a>动作</a>
+                                <a >特效</a>
+                                <a>游戏宣传</a>
+                                <a>游戏UI</a>
+                                <a>场景</a>
+                                <a>程序、策划</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--平面设计-->
+                    <div class="layui-card" style="float: left;" >
+                        <div class="layui-card-header  layui-hd" >
+                            <div  class="div-designclass">
+                                <div >
+                                    <b>平面设计</b>
+                                </div>
+
+                                <a >LOGO</a>
+                                <a >VI设计</a>
+                                <a >包装设计</a>
+                                <a >卡片/ppt</a>
+                                <a >品牌策划</a>
+                                <a >宣传设计</a>
+                                <a >广告设计</a>
+                                <a >书籍排版</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--影视动漫-->
+                    <div class="layui-card" style="float: left;" >
+                        <div class="layui-card-header  layui-hd" >
+                            <div  class="div-designclass">
+                                <div >
+                                    <b>影视动漫</b>
+                                </div>
+
+                                <a >视频制作</a>
+                                <a >动画设计</a>
+                                <a >影视服务</a>
+                                <a >漫画设计</a>
+                                <a >图片后期</a>
+                                <a >宣传片</a>
+                                <a >表情设计</a>
+                                <a >插画设计</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--家装、建筑设计-->
+                    <div class="layui-card" style="float: left;" >
+                        <div class="layui-card-header  layui-hd" >
+                            <div  class="div-designclass">
+                                <div >
+                                    <b>家装建筑设计</b>
+                                </div>
+
+                                <a>效果图</a>
+                                <a>施工图</a>
+                                <a>园林设计</a>
+                                <a>商场设计</a>
+                                <a>展会设计</a>
+                                <a>家具设计</a>
+                                <a>公寓设计</a>
+                                <a>办公、厂房</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--IT、网页设计-->
+                    <div class="layui-card" style="float: left;margin-top: 30px">
+                        <div class="layui-card-header layui-hd2" >
+                            <div  class="div-designclass" >
+                                <div >
+                                        <b>IT、网页设计</b>
+                                </div>
+
+                                <a >网站设计</a>
+                                <a >APP应用</a>
+                                <a >H5小程序</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--工业、服装设计-->
+                    <div class="layui-card" style="float: left;padding-top: 30px">
+                        <div class="layui-card-header layui-hd2" >
+                            <div  class="div-designclass" >
+                                <div >
+                                    <b>工业、服装设计</b>
+                                </div>
+
+                                <a >产品外观</a>
+                                <a >服装设计</a>
+                                <a style="width: 120px">其他工业设计</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--电商设计-->
+                    <div class="layui-card" style="float: left;padding-top: 30px">
+                        <div class="layui-card-header layui-hd2" >
+                            <div  class="div-designclass" >
+                                <div >
+                                        <b>电商设计</b>
+                                </div>
+
+                                <a >店铺装修</a>
+                                <a >主图海报</a>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="layui-card" style="float: left;padding-top: 30px">
+                        <div class="layui-card-header layui-hd2" >
+                            <div  class="div-designclass" >
+                            <div >
+                                    <b>其他</b>
+                            </div>
+                            <a>广告牌</a>
+                            <a>电子屏</a>
+                            <a>其他</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--右div-->
+                <div class="layui-card" style="float: left;">
+                    <div class="layui-card-header layui-rhd" >
+                        <div align="center" style="padding-top: 20px">
+                            <video  class="video-js vjs-default-skin" controls preload="none" width="330" height="204"
+                                   poster=""
+                                   data-setup="{}">
+                                <source src="/vide/lol.mp4" type='video/mp4' />
+                                <source src="http://视频地址格式2.webm" type='video/webm' />
+                                <source src="http://视频地址格式3.ogv" type='video/ogg' />
+                                <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                                <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                            </video>
+                        </div>
+                        <div  class="div-Releasetask" >
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="  btn-lg btn-Releasetask" data-toggle="modal" data-target="#myModal">
+                                    我要免费发布一个任务
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content modal-Releasedemand" >
+
+                                            <div class="modal-header ">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"  style="color: red">
+                                                    <span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">发布需求</h4>
+                                            </div>
+                                            <div class="modal-body ">
+                                                <div>
+                                                    <div class="needinput">
+                                                        <p>我需要:</p>
+                                                        <textarea type="text" ></textarea>
+                                                    </div>
+                                                    <div class="modal-phonenum" >
+                                                        <p >手机号码:</p>
+                                                        <input  type="text"  placeholder="验证码" >
+                                                        <button >获取</button>
+
+                                                    </div>
+                                                    <div class="messageprotect">
+                                                        <p>信息保护中,仅小红鱼项目方可见</p>
+                                                        <button id="release"><a href="./../toubiao.html" style="color: #FFFFFF">免费发布一个需求</a></button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="modal " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content" style="border-radius: 0;margin-top: 209px;width: 860px;height: 700px;">
+
+                                        <div class="modal-body " >
+
+                                            <div style="height: 50px">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #ff5251"><span aria-hidden="true">&times;</span></button>
+                                                <b style="float: left;font-size: 20px">发布需求</b>
+                                                <p style="float: left;padding-top: 11px;margin-left: 10px;font-size: 12px">完善需求可以更快匹配到合适的服务商</p>
+                                            </div>
+
+                                            <div >
+                                                <p style="float: left">当前完善值55分，详细的需求描述可增加完善值！</p>
+
+                                                <div class="progress"  style="width: 810px;height: 10px;"  >
+
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;" >
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <div style="height: 80px">
+                                                    <b style="float: left;">需求标题<font style="color: #FF7E33">*</font></b>
+                                                    <textarea type="text" style="width: 810px;height: 30px;margin-left: 5px;margin-top: 10px;resize:none;padding-left: 10px" placeholder="LOGO设计"></textarea>
+                                                </div>
+                                                <div style="">
+                                                    <b style="float: left;">需求描述<font style="color: #FF7E33">*</font></b>
+                                                    <textarea type="text" style="width: 810px;height: 140px;margin-left: 5px;margin-top: 10px;resize:none;padding-left: 10px" placeholder="商标设计"></textarea>
+                                                </div>
+                                                <div style="width: 810px;height: 78px;background-color: #E7E7E7;border: solid 1px #999999;margin-left: 4px;margin-top: 8px">
+
+                                                    <img src="/img/jiahao.png" width="50px" style="float: left;margin-left: 19px;margin-top: 18px;">
+                                                    <div style="float: left;width: 270px;color: #999999;font-size: 14px;margin-top: 23px;">
+                                                        <p style="float: left;line-height: 15px">拖拽可上传附件</p>
+                                                        <p style="float: left;line-height: 15px">最多可添加五个附件 每个大小不超过50M</p>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-top: 15px;height: 100px">
+
+                                                    <b style="float: left;">您需要的需求类型是：</b><br>
+                                                    <div style="margin-top: 15px;text-align: center" id="clickToChangeColor">
+                                                        <div style="width: 132px;float: left;padding-top: 10px;margin-left: 3px;;height: 41px;border: solid 1px #999999">logo</div>
+                                                        <div style="width: 132px;float: left;padding-top: 10px;margin-left: 12px;;height: 41px;border: solid 1px #999999">商标注册</div>
+                                                        <div style="width: 132px;float: left;padding-top: 10px;margin-left: 12px;;height: 41px;border: solid 1px #999999">商标转让</div>
+                                                        <div style="width: 132px;float: left;padding-top: 10px;margin-left: 12px;;height: 41px;border: solid 1px #999999">商标驳回复审</div>
+                                                        <a style="float: left;margin-left: 14px;margin-top: 11px;">修改</a>
+                                                    </div>
+                                                </div>
+                                                <button type="button" style="background-color: #FF5251;margin-left: 300px;;margin-top: 18px;width:122px;height: 41px;border: solid 1px ;border-radius: 0;color: white"  >
+                                                    保存此页
+
+                                                </button>
+                                                <a id="return-step" style="margin-left: 15px;">返回上一步</a>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                            <div class="messagef" >
+                                <a style="margin-left: 42px">红鱼公告</a>
+                                <a href="../rulecenter/ruleOverView.html">规则中心</a>
+                                <a>失信用户</a>
+                                <a href="../helpcenter/help_center.html">帮助中心</a>
+                            </div>
+                            <div class="information" >
+                                <p>比目鱼于今日上线，接受社会各界试用点评<a>详情>
+                                </a> <br>比目鱼于今日上线，接受社会各界试用点评<a >详情></a></p>
+
+                            </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--8.进行的任务和设计师推荐-->
+            <div  class="taskingLable">
+                <div style="float: left" >
+                    <img src="/img/renwuing.png" width="170px" >
+                    <img src="/img/sjishitj.png" width="170px" style="margin-left: 840px" >
+
+                </div>
+
+
+            </div>
+            <!--9-->
+            <div class="ManuscriptPayable">
+                <!--左-->
+                <div class="ManuscriptPayableLeft">
+                    <div class="layui-card">
+                        <div class="layui-card-header layui-hdmp">
+                            <div class="bigpic">
+                                <img src="/img/cute.png" width="595px" height="343px">
+                            </div>
+                            <div class="hdmp-describe">
+                                <p>
+                                    网页视觉设计
+                                </p>
+
+                                    <p >
+                                        比目鱼是设计服务平台，前期服务主要包含：游戏美术，平面广告，漫画，动画等美术设计。后期服务交易品类涵盖创意设计，网站设计，网络营销，文案策划，生活服务等多种行业。
+                                    </p>
+
+                                <div>
+
+                                        <button type="button" class="btn-yinggao">我来应稿</button>
+
+                                    <div class="moneystate">
+
+                                        <b >525000,00</b>
+                                        <font style="">测试金已交付平台</font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="layui-card" style="float: left;margin-top: 30px">
+                        <div class="layui-card-header layui-hdmp">
+                            <div class="bigpic">
+                                <img src="/img/cute.png" width="595px" height="343px">
+                            </div>
+                            <div class="hdmp-describe">
+                                <p>
+                                    网页视觉设计
+                                </p>
+
+                                <p >
+                                    比目鱼是设计服务平台，前期服务主要包含：游戏美术，平面广告，漫画，动画等美术设计。后期服务交易品类涵盖创意设计，网站设计，网络营销，文案策划，生活服务等多种行业。
+                                </p>
+
+                                <div>
+
+                                    <button type="button" class="btn-yinggao">我来应稿</button>
+
+                                    <div class="moneystate">
+
+                                        <b >525000,00</b>
+                                        <font style="">测试金已交付平台</font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="layui-card" style="float: left;margin-top: 30px">
+                        <div class="layui-card-header layui-hdmp">
+                            <div class="bigpic">
+                                <img src="/img/cute.png" width="595px" height="343px">
+                            </div>
+                            <div class="hdmp-describe">
+                                <p>
+                                    网页视觉设计
+                                </p>
+
+                                <p >
+                                    比目鱼是设计服务平台，前期服务主要包含：游戏美术，平面广告，漫画，动画等美术设计。后期服务交易品类涵盖创意设计，网站设计，网络营销，文案策划，生活服务等多种行业。
+                                </p>
+
+                                <div>
+
+                                    <button type="button" class="btn-yinggao">我来应稿</button>
+
+                                    <div class="moneystate">
+
+                                        <b >525000,00</b>
+                                        <font style="">测试金已交付平台</font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="layui-card" style="float: left;margin-top: 30px">
+                        <div class="layui-card-header layui-hdmp">
+                            <div class="bigpic">
+                                <img src="/img/cute.png" width="595px" height="343px">
+                            </div>
+                            <div class="hdmp-describe">
+                                <p>
+                                    网页视觉设计
+                                </p>
+
+                                <p >
+                                    比目鱼是设计服务平台，前期服务主要包含：游戏美术，平面广告，漫画，动画等美术设计。后期服务交易品类涵盖创意设计，网站设计，网络营销，文案策划，生活服务等多种行业。
+                                </p>
+
+                                <div>
+
+                                    <button type="button" class="btn-yinggao">我来应稿</button>
+
+                                    <div class="moneystate">
+
+                                        <b >525000,00</b>
+                                        <font style="">测试金已交付平台</font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="layui-card" style="float: left;margin-top: 30px">
+                        <div class="layui-card-header layui-hdmp">
+                            <div class="bigpic">
+                                <img src="/img/cute.png" width="595px" height="343px">
+                            </div>
+                            <div class="hdmp-describe">
+                                <p>
+                                    网页视觉设计
+                                </p>
+
+                                <p >
+                                    比目鱼是设计服务平台，前期服务主要包含：游戏美术，平面广告，漫画，动画等美术设计。后期服务交易品类涵盖创意设计，网站设计，网络营销，文案策划，生活服务等多种行业。
+                                </p>
+
+                                <div>
+
+                                    <button type="button" class="btn-yinggao">我来应稿</button>
+
+                                    <div class="moneystate">
+
+                                        <b >525000,00</b>
+                                        <font style="">测试金已交付平台</font>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--右-->
+                <div class="recommendRight" align="center">
+                    <!--1-->
+                    <div class="layui-card" >
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                                <img src="/img/midea.png" width="200px">
+
+
+                                <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="layui-card" style="margin-top: 21px">
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                            <img src="/img/midea.png" width="200px">
+
+
+                            <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="layui-card" style="margin-top: 21px">
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                            <img src="/img/midea.png" width="200px">
+
+
+                            <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="layui-card" style="margin-top: 21px">
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                            <img src="/img/midea.png" width="200px">
+
+
+                            <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="layui-card" style="margin-top: 21px">
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                            <img src="/img/midea.png" width="200px">
+
+
+                            <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                    <!--6-->
+                    <div class="layui-card" style="margin-top: 21px">
+                        <div class="layui-card-header layui-recommendRight"  >
+
+                            <img src="/img/midea.png" width="200px">
+
+
+                            <p >王一盒，某某公司设计总监，16年产品设计，年度最佳设计师。</p>
+
+                            <button type="button">邀请我</button>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div  class="moretask" align="center">
+                    <button type="button" style="border: none"   >
+                        <a href="../task_hall/task_hall.html" style="color:#fff;">更多任务</a>
+                    </button>
+                </div>
+
+            </div>
+
+
+
+
+            </div>
+
+        </div>
+            <div style="margin-top: 100px;float: left;margin-left: 220px;">
+                <img src="/img/zc.png" width="1469px" height="133px" >
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script>
+        videojs.options.flash.swf = "video-js.swf";
+    </script>
+
+    <script>
+        $("#clickToChangeColor1  ul li a").click(function(){
+            $("#clickToChangeColor1  ul li a").css("background","");
+
+            $("#clickToChangeColor1  ul li a").css("color","#333333");
+
+            $(this).css("background","");
+            $(this).css("color","#ff5251")
+
+
+        });
+
+
+
+        window.onload = function () {
+            var token = getUrlParam("token");
+
+            if (token != null) {
+
+                $.post("/index/checkToken",{token:token},function (result) {
+                    if(result == "success") {
+                                // 删除登录按钮
+                                $(".codediv").css("display","none");
+                                $(".registerlogin").css("display","none");
+                                // 展示 你好
+                                // TODO
+
+                            }
+                })
+                // $.post("/index/checkToken",{token:token},function (result) {
+                //     alert("ssss");
+                //     // if(result == true) {
+                //     //     // 删除登录按钮
+                //     //     $(".codediv").css("display","none");
+                //     //     $(".registerlogin").css("display","none");
+                //     //     // 展示 你好
+                //     //     // TODO
+                //     //     alert("sss");
+                //     // }else {
+                //     //     alert("asdasda");
+                //     // }
+                // });
+
+            }
+        }
+
+
+        $("#clickToChangeColor   div").click(function(){
+            $("#clickToChangeColor div").css("background","white");
+            $("#clickToChangeColor div").css("border","solid 1px #999999");
+            $("#clickToChangeColor div").css("color","#333333");
+
+            $(this).css("border","solid 1px #ff5251")
+            $(this).css("color","#ff5251")
+
+
+
+        });
+        function turnoff(obj){
+            document.getElementById(obj).style.display="none";
+        }
+
+    </script>
+    <script>
+
+    </script>
+</div>
+
+</body>
+</html>
